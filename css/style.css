@@ -201,8 +201,19 @@ button {
   margin-right: 50px;
 }
 
+.header-contact:hover svg,
+.header-contact:focus svg {
+  fill: var(--accent-color);
+}
+
+.header-icon-link {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
 .header-contact {
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -245,6 +256,10 @@ button {
 
 .features-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.features-icon {
+ 
 }
 
 .features-pre-title {
@@ -395,6 +410,27 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 4px;
+}
+
+/* Постійні клієнти */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* footer */
