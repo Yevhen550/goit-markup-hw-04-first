@@ -10,6 +10,7 @@
   --moz-background-team: #f5f4fa;
   --border-bottom-color: #ececec;
   --border-portfolio: #eeeeee;
+  --primary-svg-color: #AFB1B8;
 }
 
 html {
@@ -79,6 +80,7 @@ body {
 .btn-portfolio:focus {
   color: var(--primary-title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -258,8 +260,15 @@ button {
   margin-left: 30px;
 }
 
-.features-icon {
- 
+.features-box {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 270px;
+ height: 120px;
+ background: var(--moz-background-team);
+ border-radius: 4px;
+ margin-bottom: 30px;
 }
 
 .features-pre-title {
@@ -350,6 +359,49 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+
+.team-icon-list {
+  display: flex;
+  margin-left: auto;
+  padding: 0 32px;
+  justify-content: space-evenly;
+}
+
+.team-icon-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icon {
+  fill: var(--primary-svg-color);
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-socials {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team-socials:hover,
+.team-socials:focus {
+  background-color: var(--accent-color);
+}
+
+.team-socials:hover svg,
+.team-socials:focus svg {
+  fill: var(--primary-title-color);
 }
 
 /* portfolio */
