@@ -81,7 +81,6 @@ body {
   color: var(--primary-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 button {
@@ -436,6 +435,11 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-wrap {
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-portfolio);
@@ -466,9 +470,28 @@ img {
   padding-bottom: 94px;
 }
 
-.clients-item:not(:first-child) {
-  margin-left: 30px;
-  display: inline-block;
+.clients-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-svg-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: var(--primary-svg-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-item:hover svg,
+.clients-item:focus svg {
+  fill: var(--accent-color);
 }
 
 .clients-title {
@@ -478,6 +501,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
 }
 
 /* footer */
