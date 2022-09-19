@@ -228,13 +228,14 @@ button {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #c4c4c4;
   background-image: url(../images/index/Img\ Overlay.png),
     url(../images/index/hero.jpg);
   padding: 200px 0;
   text-align: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -366,8 +367,9 @@ img {
 
 .team-icon-list {
   display: flex;
-  padding: 0 32px;
+  justify-content: center;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .team-icon {
@@ -380,7 +382,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
 }
 
 .team-socials {
@@ -425,6 +426,7 @@ img {
 /* projects */
 
 .projects-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -439,8 +441,8 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -476,26 +478,28 @@ img {
 }
 
 .clients-item {
-  width: 170px;
-  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--primary-svg-color);
-  border-radius: 4px;
 }
 
-.clients-icon {
+.clients-link {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid var(--primary-svg-color);
+  border-radius: 4px;
   fill: var(--primary-svg-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-item:hover svg,
-.clients-item:focus svg {
+.clients-link:hover svg,
+.clients-link:focus svg {
   fill: var(--accent-color);
 }
 
@@ -597,6 +601,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .footer-icon {
@@ -609,7 +614,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
 }
 
 .footer-socials {
