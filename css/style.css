@@ -230,7 +230,7 @@ button {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/index/hero.jpg);
+  background-image: url(../images/index/Img\ Overlay.png), url(../images/index/hero.jpg);
   padding: 200px 0;
   text-align: center;
 }
